@@ -75,6 +75,9 @@ form.addEventListener('submit', e => {
     catch(e) {
         throw new Error('first number is invalid');
     }
+    finally {
+        console.log('finally clause');
+    }
 
     try {
         eval(`${secondNum} * 2`);
